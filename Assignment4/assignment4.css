@@ -1,0 +1,53 @@
+html {
+    background-color: white;
+    width: 960px;
+}
+
+.container {
+    display: grid;
+    grid: 
+        "logo logo"
+        "header header"
+        "photo photo"
+        "article table"
+        "footer footer" /
+        1fr 1fr
+}
+.logo {
+    grid-area: logo;
+}
+.header {
+    background-color: black;
+    color: white;
+    grid-area: header;
+    height: 25px;
+}
+
+.photo {
+    grid-area: photo;
+    margin-bottom: 20px
+}
+
+.article {
+    grid-area: article;
+    height: 300px;
+}
+
+.table {
+    grid-area: table;
+    height: 300;
+}
+
+.footer {
+    grid-area: footer;
+    height: 40px;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+}
+
+th {
+    padding-right: 100px
+}

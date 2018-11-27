@@ -1,0 +1,34 @@
+html {
+    width: 960px;
+    background-color: rgb(252,235,235)
+}
+.container {
+    display: grid;
+    grid: 
+        "header header header header"
+        "navbar navbar navbar navbar"
+        "section1 section1 section2 section2"
+        "section3 section3 section3 section3" /
+        1fr 1fr
+}
+
+.header {
+    grid-area: header;
+}
+
+.navbar {
+    grid-area: navbar;
+}
+
+.section1 {
+    grid-area: section1;
+}
+
+.section2 {
+    grid-area: section2;
+    float: right;
+}
+
+.section3 {
+    grid-area: section3;
+}
