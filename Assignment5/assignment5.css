@@ -5,10 +5,11 @@ html {
 .container {
     display: grid;
     grid: 
-        "header header header header"
-        "navbar navbar navbar navbar"
-        "section1 section1 section2 section2"
-        "section3 section3 section3 section3" /
+        "header header header header header header"
+        "navbar navbar navbar navbar navbar navbar"
+        "section1 section1 section1 section2 section2 section2"
+        "section3 section3 section3 section3 section3 section3"
+        "item5 item5 item6 item6 item7 item7" /
         1fr 1fr
 }
 
@@ -18,17 +19,63 @@ html {
 
 .navbar {
     grid-area: navbar;
+    display: inline-block;
+    text-decoration: underline;
+    color: blue;
+    margin-bottom: 20px;
+    margin-top: 20px
 }
 
 .section1 {
     grid-area: section1;
+    float: left;
+    width: 440px;
+    height: 
 }
 
 .section2 {
     grid-area: section2;
     float: right;
+    width: 440px;
+    margin-bottom: 5px;
+}
+
+.section21 {
+    grid-area: section2;
+    float: right;
+    width: 440px;
+    margin-bottom: 5px;
+}
+
+.section22 {
+    grid-area: section2;
+    float: right;
+    width: 440px;
 }
 
 .section3 {
     grid-area: section3;
+    float: left
+}
+
+.item5 {
+    width: 300px;
+    grid-area: item5;
+    display: inline-block;
+    vertical-align: top
+}
+
+.item6 {
+    width: 300px;
+    grid-area: item6;
+    display: inline-block;
+    margin-left: 15px;
+    vertical-align: top
+}
+
+.item7 {
+    width: 300px;
+    grid-area: item7;
+    display: inline-block;
+    margin-left: 20px;
 }
